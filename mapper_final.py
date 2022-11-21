@@ -41,41 +41,23 @@ for line in sys.stdin:
         continue
 
     if street_on != '':
-        if pedestrians_injured != '0':
-            print(f"{street_on}:{zip_code}:pedestrians:injured\t{pedestrians_injured}")
-        if pedestrians_killed != '0':
-            print(f"{street_on}:{zip_code}:pedestrians:killed\t{pedestrians_killed}")
-        if cyclists_injured != '0':
-            print(f"{street_on}:{zip_code}:cyclists:injured\t{cyclists_injured}")
-        if cyclists_killed != '0':
-            print(f"{street_on}:{zip_code}:cyclists:killed\t{cyclists_killed}")
-        if motorists_injured != '0':
-            print(f"{street_on}:{zip_code}:motorists:injured\t{motorists_injured}")
-        if motorists_killed != '0':
-            print(f"{street_on}:{zip_code}:motorists:killed\t{motorists_killed}")
+        print(f"{street_on}\t{zip_code}\tpedestrians\tinjured\t{pedestrians_injured}")
+        print(f"{street_on}\t{zip_code}\tpedestrians\tkilled\t{pedestrians_killed}")
+        print(f"{street_on}\t{zip_code}\tcyclists\tinjured\t{cyclists_injured}")
+        print(f"{street_on}\t{zip_code}\tcyclists\tkilled\t{cyclists_killed}")
+        print(f"{street_on}\t{zip_code}\tmotorists\tinjured\t{motorists_injured}")
+        print(f"{street_on}\t{zip_code}\tmotorists\tkilled\t{motorists_killed}")
     if street_cross != '':
-        if pedestrians_injured != '0':
-            print(f"{street_cross}:{zip_code}:pedestrians:injured\t{pedestrians_injured}")
-        if pedestrians_killed != '0':
-            print(f"{street_cross}:{zip_code}:pedestrians:killed\t{pedestrians_killed}")
-        if cyclists_injured != '0':
-            print(f"{street_cross}:{zip_code}:cyclists:injured\t{cyclists_injured}")
-        if cyclists_killed != '0':
-            print(f"{street_cross}:{zip_code}:cyclists:killed\t{cyclists_killed}")
-        if motorists_injured != '0':
-            print(f"{street_cross}:{zip_code}:motorists:injured\t{motorists_injured}")
-        if motorists_killed != '0':
-            print(f"{street_cross}:{zip_code}:motorists:killed\t{motorists_killed}")
+        print(f"{street_cross}\t{zip_code}\tpedestrians\tinjured\t{pedestrians_injured}")
+        print(f"{street_cross}\t{zip_code}\tpedestrians\tkilled\t{pedestrians_killed}")
+        print(f"{street_cross}\t{zip_code}\tcyclists\tinjured\t{cyclists_injured}")
+        print(f"{street_cross}\t{zip_code}\tcyclists\tkilled\t{cyclists_killed}")
+        print(f"{street_cross}\t{zip_code}\tmotorists\tinjured\t{motorists_injured}")
+        print(f"{street_cross}\t{zip_code}\tmotorists\tkilled\t{motorists_killed}")
     if street_off != '':
-        if pedestrians_injured != '0':
-            print(f"{street_off}:{zip_code}:pedestrians:injured\t{pedestrians_injured}")
-        if pedestrians_killed != '0':
-            print(f"{street_off}:{zip_code}:pedestrians:killed\t{pedestrians_killed}")
-        if cyclists_injured != '0':
-            print(f"{street_off}:{zip_code}:cyclists:injured\t{cyclists_injured}")
-        if cyclists_killed != '0':
-            print(f"{street_off}:{zip_code}:cyclists:killed\t{cyclists_killed}")
-        if motorists_injured != '0':
-            print(f"{street_off}:{zip_code}:motorists:injured\t{motorists_injured}")
-        if motorists_killed != '0':
-            print(f"{street_off}:{zip_code}:motorists:killed\t{motorists_killed}")
+        print(f"{street_off}\t{zip_code}\tpedestrians\tinjured\t{pedestrians_injured}")
+        print(f"{street_off}\t{zip_code}\tpedestrians\tkilled\t{pedestrians_killed}")
+        print(f"{street_off}\t{zip_code}\tcyclists\tinjured\t{cyclists_injured}")
+        print(f"{street_off}\t{zip_code}\tcyclists\tkilled\t{cyclists_killed}")
+        print(f"{street_off}\t{zip_code}\tmotorists\tinjured\t{motorists_injured}")
+        print(f"{street_off}\t{zip_code}\tmotorists\tkilled\t{motorists_killed}")

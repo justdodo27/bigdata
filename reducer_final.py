@@ -6,8 +6,10 @@ damage_sum = 0
 
 
 for line in sys.stdin:
-    key, damage_count = line.split('\t')
+    *key, damage_count = line.split('\t')
     damage_count = int(damage_count)
+
+    key = '\t'.join(key)
 
     if current_key == key:
         damage_sum += damage_count

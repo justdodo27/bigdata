@@ -92,9 +92,9 @@ collision_union = UNION collision_pedestrians_limit, collision_cyclists_limit, c
 final_result = FOREACH collision_union GENERATE
     collision_final::street AS street,
     collision_final::person_type AS person_type,
-    collision_final::injured AS injured,
-    collision_final::killed AS killed;
+    collision_final::killed AS killed,
+    collision_final::injured AS injured;
 DESCRIBE final_result;
 
 --STORE
-STORE collision_sum INTO '$output_path' USING JsonStorage();
+STORE final_result INTO '$output_path' USING JsonStorage();

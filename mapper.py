@@ -25,8 +25,8 @@ for line in sys.stdin:
         continue
 
     street_on = values[ON_STREET_COL]
-    street_cross = values[ON_STREET_COL]
-    street_off = values[ON_STREET_COL]
+    street_cross = values[CROSS_STREET_COL]
+    street_off = values[OFF_STREET_COL]
 
     pedestrians_injured = values[PEDE_INJ_COL]
     pedestrians_killed = values[PEDE_KILL_COL]
